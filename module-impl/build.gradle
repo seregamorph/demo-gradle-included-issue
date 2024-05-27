@@ -1,0 +1,8 @@
+plugins {
+    id 'java-library'
+    id 'reproducible-build'
+}
+
+dependencies {
+    implementation project(":module-contracts")
+}

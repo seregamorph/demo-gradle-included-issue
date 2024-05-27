@@ -1,0 +1,9 @@
+pluginManagement {
+    includeBuild("../settings")
+}
+
+include(":module-contracts")
+include(":module-impl")
+
+project(':module-contracts').projectDir = new File(settingsDir, '../module-contracts')
+project(':module-impl').projectDir = new File(settingsDir, '../module-impl')
